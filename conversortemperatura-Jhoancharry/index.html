@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="conversortemperatura.js"></script>
+    <title>Conversor</title>
+</head>
+<body>
+    <script>
+        let opc;
+        let temp, res;
+        alert("Conversor de Temperatura");
+    
+        opc = parseInt(prompt("1. Celsius a Fahrenheit \n2. Fahrenheit a Celsius\nSeleccione una opción (1 o 2):"));
+        switch (opc) {
+            case 1:
+                temp = parseFloat(prompt("Ingrese la temperatura en grados Celsius:"));
+                res = (temp * 9/5) + 32;
+                alert("La temperatura equivalente en grados Fahrenheit es:" +"\n"+res);
+                break;
+            case 2:
+                temp = parseFloat(prompt("Ingrese la temperatura en grados Fahrenheit:"));
+                res = (temp - 32) * 5/9;
+                alert("La temperatura equivalente en grados Celsius es:"+"\n"+res);
+                break;
+            default:
+                alert("Opción no válida.");
+
+        }
+    </script>
+</body>
+</html>
