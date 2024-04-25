@@ -20,7 +20,7 @@ window.addEventListener('load', ()=>{
         }
 
 
-        document.write(resultado)
+        document.getElementById("resultado").innerHTML = resultado;
     })
     
    

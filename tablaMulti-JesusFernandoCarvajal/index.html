@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprende a multiplicar</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div>
-        <input type="number" name="tablaNumber" id="tablaNumber">
-        <button id="calcular">Evaluar</button>
+
+    <div class="container">
+        <div class="menu">
+            <b>1.</b><p>Aprender</p>
+            <b>2.</b><p>limpiar</p>
+            <b>0.</b><p>cerrar</p>
+        </div>
+        
+        <div class="formulario">
+            <input type="number" name="tablaNumber" id="tablaNumber">
+            <button id="calcular">Evaluar</button>
+        </div>
+        <div id="resultado"></div>
+        <button>limpiar</button>
     </div>
-
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
