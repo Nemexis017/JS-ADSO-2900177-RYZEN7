@@ -18,7 +18,7 @@ window.addEventListener('load', ()=>{
     })
     
     document.getElementById("cerrar").addEventListener('click', ()=>{
-        document.getElementById("container").innerHTML = "chaoo";
+        document.getElementById("container").innerHTML = "Si quieres volver al programa, recargue la pagina";
     })
 
     document.getElementById("calcular").addEventListener('click', ()=>{
