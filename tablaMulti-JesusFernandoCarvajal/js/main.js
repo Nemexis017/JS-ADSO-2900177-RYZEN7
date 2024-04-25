@@ -17,6 +17,10 @@ window.addEventListener('load', ()=>{
         document.getElementById("resultado").innerHTML = "";
     })
     
+    document.getElementById("cerrar").addEventListener('click', ()=>{
+        document.getElementById("container").innerHTML = "chaoo";
+    })
+
     document.getElementById("calcular").addEventListener('click', ()=>{
         let tabla = document.getElementById("tablaNumber").value;
         let resultado= "";
