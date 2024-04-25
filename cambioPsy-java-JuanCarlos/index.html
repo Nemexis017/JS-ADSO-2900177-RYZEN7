@@ -20,27 +20,37 @@
         per1 =parseInt(prompt("dijite su nombre"))
         n1 =parseInt(prompt("dijite primer numero"))
         n2 =parseInt(prompt("dijite segundo numero"))
+
+        operacion = -1
+        
+        while(operacion <1 || operacion >4){
+          
+        
         operacion =parseInt(prompt("escoja la operacion \n 1. suma \n 2. resta \n 3. multiplicacion \n 4. division"))
 
-        if(operacion=="1" || operacon=="2" || operacion=="3" || operacion=="4"){
-            if(operacion=="1"){
-                suma = n1+n2;
-                alert("La suma de los dos numeros  que escogio es: "  + suma)
-            }
-            if(operacion=="2"){
-                resta = n1-n2;
-                alert("La resta de los dos numeros que escogio es: "  + resta)
-            }
-            if(operacion=="3"){
-                 multiplicacion = n1*n2
-                 alert("La multiplicacion de los dos numeros  que escogio es: " +  multiplicacion)
-            }
-            if("operacion=="4"){
-                divicion = n1/n2
-                alert("La  divicion de los dos numeros que escogio es: " +  divicion )
-            }
-        }
-          
+        if(operacion == 1){
+          suma = n1+n2;
+          alert("la suma que escogio es:"+suma)
+
+       }else if(operacion == 2){
+        resta = n1 -n2;
+        alert("la resta que escogio es:"+resta)
+
+       }else if(operacion == 3){
+        multiplicacion = n1 *n2;
+        alert("la multiplicacion que escogio es:"+multiplicacion)
+      
+      
+      } else if(operacion == 4){
+        divicion = n1 /n2;
+        alert("la divicion que escogio es:"+divicion)
+
+      } 
+      else{
+        alert("accion no valida")
+      }
+    }
+      
 
       </script>
 </body>
