@@ -4,20 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <script>
-        let num, suma, i;
-        num = parseInt(prompt("Ingrese un número entero positivo:"));
-        if (num < 1 || isNaN(num)) {
-            console.log("El número ingresado no es válido. Debe ser un número entero positivo.");
-        } else {
-            suma = 0;
-            for (i = 2; i <= num; i += 2) {
-                suma += i;
-            }
-            console.log("La suma de todos los números pares desde 1 hasta " + num + " es: " + suma);
-        }
+        let num = parseInt(prompt("Ingrese un número entero positivo:"));
+        
+        console.log("La suma de todos los números pares desde 1 hasta " + num + " es: " +sumNumPar(num));
     </script>
 </body>
 </html>
