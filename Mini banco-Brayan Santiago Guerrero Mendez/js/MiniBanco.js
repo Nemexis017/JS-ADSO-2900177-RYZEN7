@@ -4,28 +4,24 @@ let retiro
 let ingreso
 let operacionR
 
-sueldo = 1000000
+sueldo = 0;
 
 
 
-operacionR = prompt("Desea ingresar al sistema si/no")
 
 
 
-if (operacionR == "si") {
-    
+    menu = `Que operacion desea realizar: \n 1.Consultar sueldo \n 2.Retiro \n 3.Ingreso \n 4.Salir`
     do{
-        operaciones = prompt("Que operacion desea realizar: 1.Consultar sueldo 2.Retiro 3.Ingreso 4.Salir")
+        operaciones = prompt(menu)
         if (operaciones == 1) {
             alert("Su sueldo es de: " + sueldo)
     
         }else if (operaciones == 2) {
             retiro =parseFloat(prompt("Cuanto dinero desea retirar"))
-            if (retiro <= 0 ) {
+            if (retiro > sueldo || retiro <= 0) {
     
                 alert("Saldo insuficiente")
-    
-    
             }else{
                
                 alert("Retiro con exito")
@@ -33,10 +29,15 @@ if (operacionR == "si") {
                 alert("Su nuevo sueldo es de: " + sueldo)
             }
         }else if (operaciones == 3) {
-        ingreso = parseFloat(prompt("Cuanto dinero desea ingresar"))    ;
-            alert("Ingreso con exito")
-            sueldo = sueldo + ingreso
-            alert("Su nuevo sueldo es de: " + sueldo)
+        ingreso = parseFloat(prompt("Cuanto dinero desea ingresar"));
+            if (ingreso <= 0) {
+                alert("El ingreso debe ser mayor de 0")
+            }else{
+                sueldo = sueldo + ingreso
+                alert("Ingreso con exito")
+                alert("Su nuevo sueldo es de: " + sueldo)
+            }
+
     
         }else if (operaciones == 4) {
             alert("Gracias por su visita")
@@ -46,6 +47,3 @@ if (operacionR == "si") {
     }while(operaciones < 4)
     
 
-}else{
-    alert("Gracias por su visita")
-}
