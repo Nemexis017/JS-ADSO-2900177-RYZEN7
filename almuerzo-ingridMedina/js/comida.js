@@ -28,7 +28,7 @@ if (comidaop = 1) {
 
 	precio = 12000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 
 alert("El precio es: " + total)
@@ -36,12 +36,12 @@ alert("El precio es: " + total)
 } else if (comidaop == 2) {
 	precio = 17000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else if (comidaop == 3) {
 	precio = 19000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else{
 	alert("seleccion incorecta")
@@ -51,17 +51,17 @@ if (comidaop = 2) {
 } if (comidaop == 1) {
 	precio = 8000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else if (comidaop == 2) {
 	precio = 12000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else if (comidaop == 3) {
 	precio = 15000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else {
 
@@ -71,17 +71,17 @@ if (comidaop = 3) {
 } if (comidaop == 1) {
 	precio = 4000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else if (comidaop == 2) {
 	precio = 5000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else if (comidaop == 3) {
 	precio = 4000
 	alert(precio)
-	cantidad = prompt("ingre la cantidad ")
+	cantidad = prompt("ingrese la cantidad ")
 	total = precio * cantidad
 } else {
 	alert("seleccion incorecta")
