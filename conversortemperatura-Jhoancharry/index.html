@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="conversortemperatura.js"></script>
-    <title>ConversoeTemperaturacharry</title>
+    <title>Conversor</title>
 </head>
 <body>
     <script>
         let opc;
         let temp, res;
         alert("Conversor de Temperatura");
-        alert("1. Celsius a Fahrenheit");
-        alert("2. Fahrenheit a Celsius");
-        opc = parseInt(prompt("Seleccione una opción (1 o 2):"));
+    
+        opc = parseInt(prompt("1. Celsius a Fahrenheit \n2. Fahrenheit a Celsius\nSeleccione una opción (1 o 2):"));
         switch (opc) {
             case 1:
                 temp = parseFloat(prompt("Ingrese la temperatura en grados Celsius:"));
