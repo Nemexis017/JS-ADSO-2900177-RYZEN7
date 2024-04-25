@@ -14,26 +14,33 @@
          var resta;
          var multiplicacion;
          var divicion;
+         var per1;
+        var operacion;
         
-
+        per1 =parseInt(prompt("dijite su nombre"))
         n1 =parseInt(prompt("dijite primer numero"))
         n2 =parseInt(prompt("dijite segundo numero"))
+        operacion =parseInt(prompt("escoja la operacion \n 1. suma \n 2. resta \n 3. multiplicacion \n 4. division"))
 
-        suma = n1+n2;
-        resta = n1-n2;
-        multiplicacion = n1*n2
-        divicion = n1/n2
+        if(operacion=="1" || operacon=="2" || operacion=="3" || operacion=="4"){
+            if(operacion=="1"){
+                suma = n1+n2;
+                alert("La suma de los dos numeros  que escogio " + per1 + suma)
+            }
+            if(operacion=="2"){
+                resta = n1-n2;
+                alert("La resta de los dos numeros que escogio " + per1 + resta)
+            }
+            if(operacion=="3"){
+                 multiplicacion = n1*n2
+                 alert("La multiplicacion de los dos numeros  que escogio " + per1 +  multiplicacion)
+            }
+            if("operacion=="4"){
+                divicion = n1/n2
+                alert("La  divicion de los dos numeros que escogio " + per1 +  divicion )
+            }
+        }
           
-        alert("La suma de los dos numeros es: " + suma)
-          
-        alert("La resta de los dos numeros es: " + resta)
-
-        alert("La multiplicacion de los dos numeros es: " +  multiplicacion)
-
-        alert("La  divicion de los dos numeros es: " +  divicion )
-          
-          
-
 
       </script>
 </body>
