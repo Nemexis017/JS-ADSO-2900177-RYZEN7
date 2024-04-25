@@ -8,9 +8,11 @@
 </head>
 <body>
     <script>
-        let num = parseInt(prompt("Ingrese un número entero positivo:"));
+        let usua = prompt("Señor(a) Usuario por favor ingrese su nombre")
 
-        alert("La suma de todos los números pares desde 1 hasta " + num + " es: " +sumNumPar(num));
+        let num = parseInt(prompt("Señor(a) "+usua+" por favor ingrese un número entero positivo:"));
+
+        alert("Señor(a) "+usua+"\nLa suma de todos los números pares desde 1 hasta " + num + " es: " +sumNumPar(num)+"\nLa suma de todos los números impares desde 1 hasta " + num + " es: " +sumNumImp(num));
     </script>
 </body>
 </html>
