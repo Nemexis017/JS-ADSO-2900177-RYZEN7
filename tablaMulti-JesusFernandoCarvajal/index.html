@@ -10,17 +10,16 @@
 
     <div class="container">
         <div class="menu">
-            <b>1.</b><p>Aprender</p>
-            <b>2.</b><p>limpiar</p>
-            <b>0.</b><p>cerrar</p>
+            <b class="num">1.</b><p id="mostrar">Aprender</p>
+            <b class="num">2.</b><p id="limpiar">limpiar</p>
+            <b class="num">0.</b><p id="cerrar">cerrar</p>
         </div>
         
-        <div class="formulario">
+        <div class="formulario" id="formulario" style="display: none;">
             <input type="number" name="tablaNumber" id="tablaNumber">
             <button id="calcular">Evaluar</button>
         </div>
         <div id="resultado"></div>
-        <button>limpiar</button>
     </div>
     
     <script src="js/main.js"></script>

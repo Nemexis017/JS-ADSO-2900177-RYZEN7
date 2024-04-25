@@ -10,3 +10,9 @@ body{
     border: 1px solid #000;
     height: 100vh;
 }
+
+.menu{
+    display: grid;
+    grid-template-columns: 10% 90% ;
+
+}
