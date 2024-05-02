@@ -31,77 +31,77 @@ do{
 	comidaop = respuestaComida(); 
 	switch (comidaop) {
 		case 1:
-			precio = 12000
-			alert("El precio del almuerzo es: "+precio)
+			precio = 12.000
+			alert("El precio del almuerzo es: "+precio.toFixed(3))
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
-	
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 	
 		case 2:
-			precio = 17000
-			alert("El precio del almuerzo es: "+precio)
+			precio = 17.000
+			alert("El precio del almuerzo es: "+precio.toFixed(3))
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		
 		case 3:
-			precio = 19000
-			alert("El precio del almuerzo es: "+precio)
+			precio = 19.000
+			alert("El precio del almuerzo es: "+precio.toFixed(3))
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 
 		case 4:
-			precio = 8000
-			alert("El precio de la bandeja: "+precio)
+			precio = 8.000
+			alert("El precio de la bandeja: "+precio.toFixed(3))
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		case 5:
-			precio = 12000
-			alert("El precio de la bandeja: "+precio)
+			precio = 12.000
+			alert("El precio de la bandeja: "+precio.toFixed(3))
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		case 6:
-			precio = 19000
-			alert("El precio de la bandeja: "+precio)
+			precio = 19.000
+			alert("El precio de la bandeja: "+precio.toFixed(3))
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		case 7:
-			precio = 4000
-			alert("El precio de la sopa es: "+precio)
+			precio = 4.000
+			alert("El precio de la sopa es: "+precio.toFixed(3))
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		case 8:
-			precio = 5000
-			alert("El precio de la sopa es: "+precio)
+			precio = 5.000
+			alert("El precio de la sopa es: "+precio.toFixed(3))
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 		case 9:
-			precio = 4000
-			alert("El precio de la sopa es : "+precio)
+			precio = 4.000
+			alert("El precio de la sopa es : "+precio.toFixed(3))
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
-			alert("El precio es: " + total)
+			alert("El precio es: " + total.toFixed(3))
 			break;
 
 			
 		default:
-			break;
 			alert("seleccion incorecta")
+			break;
+
 	}
 
 }while(comida < 4)
