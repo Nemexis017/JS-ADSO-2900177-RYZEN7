@@ -4,8 +4,6 @@ let precio
 let cantidad
 let total
 let comida
-// console.log (" ingreser nombre del cliente")
-nombre = prompt("ingrese nombre del cliente");
 
 function respuestaComida(){
 	switch (comida) {
@@ -18,6 +16,9 @@ function respuestaComida(){
 		case 3:
 			comidaop = parseInt(prompt(`7- sancocho\n8- crema de verdura\n9- sopa de maiz`))
 			return comidaop
+		case 4:
+			alert("Gracias por su visita");
+			break;
 		default:
 			alert("Seleccion incorrecta")
 			return comidaop = 0
@@ -25,82 +26,82 @@ function respuestaComida(){
 }
 
 do{
-	comida = parseInt(prompt(`1-almuerzos completo\n2-bandeja\n3-sopa`));
+	nombre = prompt("ingrese nombre del cliente");
+	comida = parseInt(prompt(`1-almuerzos completo\n2-bandeja\n3-sopa\n4-Salir`));
 	comidaop = respuestaComida(); 
 	switch (comidaop) {
 		case 1:
 			precio = 12000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio del almuerzo es: "+precio)
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
 	
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 	
 		case 2:
 			precio = 17000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio del almuerzo es: "+precio)
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		
 		case 3:
 			precio = 19000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio del almuerzo es: "+precio)
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 
 		case 4:
 			precio = 8000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la bandeja: "+precio)
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		case 5:
 			precio = 12000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la bandeja: "+precio)
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		case 6:
 			precio = 19000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la bandeja: "+precio)
 			cantidad = parseInt(prompt("ingrese la cantidad "))
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		case 7:
 			precio = 4000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la sopa es: "+precio)
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		case 8:
 			precio = 5000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la sopa es: "+precio)
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
 		case 9:
 			precio = 4000
-			alert("el precio del almuerzo es: "+precio)
+			alert("El precio de la sopa es : "+precio)
 			cantidad = prompt("ingrese la cantidad ")
 			total = precio * cantidad
 			alert("El precio es: " + total)
-			estado == 1
+			break;
+
 			
 		default:
-			estado == 1
+			break;
 			alert("seleccion incorecta")
 	}
 
-}while(estado < 1)
-
-
+}while(comida < 4)
